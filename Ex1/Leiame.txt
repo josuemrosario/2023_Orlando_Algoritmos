@@ -1,0 +1,8 @@
+Objetivos: 
+Escrever um programa para 
+ - Ler um valor.
+ - Escrever o seu antecessor e sucessor.
+
+
+
+
