@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="numero">Numero : </label>
+        <input id="numero" type="number">
+        <input id="botao_processar" type="button" value="processar">
+    </form>
+    <div id="saida">
+
+    </div>
+
+
+
+    <script>
+
+        saida = document.getElementById('saida').innerHTML = '<h1>teste</h1>'
+
+        processar = document.getElementById("botao_processar")
+        processar.addEventListener('click',function () {
+            valor = document.getElementById('numero').value
+            console.log("valor Digitado : ", parseInt(valor))
+            console.log("antecessor : ", parseInt(valor) - 1)
+            console.log("sucessor : ", parseInt(valor) + 1)
+        })
+
+
+
+
+
+
+        // Aqui vai meus scripts
+
+
+
+            
+    </script>
+</body>
+</html>

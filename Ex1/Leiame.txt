@@ -1,8 +1,22 @@
+Termos de Ensino/Pesquisa
+ window.prompt()
+ parseInt()
+ elemento.addEventListener()
+
 Objetivos: 
 Escrever um programa para 
  - Ler um valor.
  - Escrever o seu antecessor e sucessor.
 
+Exemplo saida
+Digite um numeros  5
+Sucessor : 6
+Antecessor: 4
+
+Instruções
+ - Use primeiro a console e entrada basica com prompt()
+ - Erro: Porque o javascript junta o numeros em vez de somar ?
+ - Como capturar evento no javascript ?
 
 
 
