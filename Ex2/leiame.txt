@@ -1,0 +1,28 @@
+Termos de Ensino/Pesquisa
+=========================
+ window.prompt()
+ operador + e seu problemas para uso com numeros
+ parseInt()
+ elemento.addEventListener()
+ getElementById
+ insertAdjacentHTML
+
+Objetivos: 
+=========================
+- Ler as dimensões de um retângulo (base e altura), calcular e escrever a área do retângulo.
+- Area_retangulo = base * altura
+
+
+
+Exemplo saida
+=========================
+
+
+
+Instruções
+=========================
+01 - A entrada é inserida direto no código e o calculo é mostrado na console
+02 - Refatorar para entrada através de formulario
+03 - Refatorar para saida sendo mostrada diretamente por HTML   
+       - Usando elemento h1 por exemplo.
+       - Usando um form como saida.
