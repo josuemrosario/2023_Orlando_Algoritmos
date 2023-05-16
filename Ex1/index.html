@@ -9,37 +9,32 @@
 <body>
 
     <form action="">
+        
         <label for="numero">Numero : </label>
         <input id="numero" type="number">
+        
         <input id="botao_processar" type="button" value="processar">
     </form>
+    
     <div id="saida">
+        <!-- HTML aparecer aqui -->
 
     </div>
 
 
 
     <script>
-
-        saida = document.getElementById('saida').innerHTML = '<h1>teste</h1>'
+             
+        console.log(document.getElementById('saida').innerHTML)
 
         processar = document.getElementById("botao_processar")
         processar.addEventListener('click',function () {
             valor = document.getElementById('numero').value
-            console.log("valor Digitado : ", parseInt(valor))
-            console.log("antecessor : ", parseInt(valor) - 1)
-            console.log("sucessor : ", parseInt(valor) + 1)
+            
+            document.getElementById('saida').insertAdjacentHTML("beforeend",`<h2> Valor Digitado : ${parseInt(valor)} </h2>`)
+            document.getElementById('saida').insertAdjacentHTML("beforeend",`<h2> Antecessor :  ${parseInt(valor) - 1} </h2>`)
+            document.getElementById('saida').insertAdjacentHTML("beforeend",`<h2> Sucessor : ${parseInt(valor) + 1} </h2>`)
         })
-
-
-
-
-
-
-        // Aqui vai meus scripts
-
-
-
             
     </script>
 </body>

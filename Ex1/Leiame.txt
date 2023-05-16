@@ -1,7 +1,10 @@
 Termos de Ensino/Pesquisa
  window.prompt()
+ operador + e seu problemas para uso com numeros
  parseInt()
  elemento.addEventListener()
+ getElementById
+ insertAdjacentHTML
 
 Objetivos: 
 Escrever um programa para 
@@ -9,14 +12,11 @@ Escrever um programa para
  - Escrever o seu antecessor e sucessor.
 
 Exemplo saida
-Digite um numeros  5
+Digite um numero : 5
 Sucessor : 6
 Antecessor: 4
 
 Instruções
- - Use primeiro a console e entrada basica com prompt()
- - Erro: Porque o javascript junta o numeros em vez de somar ?
- - Como capturar evento no javascript ?
-
-
-
+ - Crie uma versao básica com prompt() e usando a console
+ - Refatore o código modificando a entrada para ser feita via form (use button em vez de submit)
+ - Refatore o código para mostrar a saida em HTML.
