@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Area Retangulo</title>
+</head>
+<body>
+    <form action="">
+        
+        <label for="base" >Base : </label>
+        <input id="base" type="number" value=""><br>
+
+        <label for="altura">Altura : </label>
+        <input id="altura" type="number"><br>
+
+        <label for="resultado">Resultado : </label>
+        <input id="resultado" type="number" disabled><br>
+
+        <!-- <input id="btnresultado" type="button" value="Calcular Area"> -->
+
+    </form>
+
+    <script>
+
+        // Desafio 1 - Achar um evento que rode ao fazer alteração em campo
+        // Desafio 2 - Criar uma funcao para rodar quando esse evento ocorre
+
+        // botao_resultado = document.getElementById("btnresultado")
+        
+        base = document.getElementById("base")
+        altura = document.getElementById("altura")
+        resultado = document.getElementById("resultado")
+        
+        
+        base.addEventListener('input', function () {
+            
+           resultado.value =  calculaArea(base.value,altura.value)
+
+        })
+        
+        altura.addEventListener('input',function () {
+            resultado.value =  calculaArea(base.value,altura.value)
+        })
+
+        
+
+        function calculaArea(base,altura){
+            return base * altura
+        }
+        
+        // botao_resultado.addEventListener('click',function(){
+        //     console.log('cheguei ate aqui')
+        //     base = parseInt(document.getElementById("base").value)
+        //     altura = parseInt(document.getElementById("altura").value)
+            
+
+        //     resultado.value = base * altura
+            
+        // })
+        
+       
+
+    </script>
+</body>
+</html>

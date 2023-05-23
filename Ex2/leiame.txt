@@ -22,7 +22,8 @@ Exemplo saida
 Instruções
 =========================
 01 - A entrada é inserida direto no código e o calculo é mostrado na console
-02 - Refatorar para entrada através de formulario
+02 - Refatorar para entrada através de formulario. Use um botao para calcular o resultado
 03 - Refatorar para saida sendo mostrada diretamente por HTML   
        - Usando elemento h1 por exemplo.
        - Usando um form como saida.
+04 - Fazer com que ao mudar um dos campos, base ou altura, o caculo seja feito automaticamente
