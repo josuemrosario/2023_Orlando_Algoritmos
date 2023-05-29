@@ -1,6 +1,6 @@
 Termos de Ensino/Pesquisa
 =========================
-
+- 
 
 
 Objetivos: 
@@ -14,12 +14,12 @@ Instruções
 - Criar um programa que recebe a idade da pessoa em anos 
 - Mostre a idade em meses, dias, e horas
 - Refatore o programa para receber o ano de nascimento e efetuar o calculo da idade baseado no ano de nascimento
-- Refatorar o programa para que a saida seja feita através de uma tabela
+- Refatorar o programa para que a saida seja feita através de uma tabela (em HTML)
 - Refatorar o programa receber multiplas entradas e guardar em um array
 - Refatorar o programa para que a tabela mostre multiplas linhas
 
 
-Exemplo saida
+Exemplo calculo
 =========================
 
 Exemplo de calculo
@@ -27,3 +27,16 @@ Idade => 10 anos
 Idade em meses => 10 anos x 12 meses = 120 meses
 Idade em dias  => 120 meses x 30 dias = 3600 dias
 Idade em horas => 3600 dias x 24 horas = 86400 horas
+
+
+Exemplo saida
+=========================
+
+idade
+10
+
+
+Meses : 120
+Dias  : 3600
+Horas : 86400
+
