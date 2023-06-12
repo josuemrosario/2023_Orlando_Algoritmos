@@ -33,28 +33,30 @@
 </body>
 <script>
 
-    frutas = ['banana','maca','laranja']
-    console.log(frutas[0])
-    frutas[0] = 'melancia'
-    console.log(frutas[0])
-    frutas.push('uva')
-    console.log(frutas)
-    frutas.pop()
-    console.log(frutas)
+    bancoDados = []
 
-    euMesmo = {
-        nome: 'josue Rosario',
-        Idade: '44'
-    }
+    // frutas = ['banana','maca','laranja']
+    // console.log(frutas[0])
+    // frutas[0] = 'melancia'
+    // console.log(frutas[0])
+    // frutas.push('uva')
+    // console.log(frutas)
+    // frutas.pop()
+    // console.log(frutas)
 
-    console.log(euMesmo.nome)
-    euMesmo.nome = 'joao da silva'
-    console.log(euMesmo.nome)
+    // euMesmo = {
+    //     nome: 'josue Rosario',
+    //     Idade: '44'
+    // }
+
+    // console.log(euMesmo.nome)
+    // euMesmo.nome = 'joao da silva'
+    // console.log(euMesmo.nome)
     
-    bancasDeFruta = []
-    bancasDeFruta.push({nome:'banca do jose', tipo:'banca de frutas'})
-    bancasDeFruta.push({nome:'banca do luiz', tipo:'banca de verduras'})
-    console.log(bancasDeFruta)
+    // bancasDeFruta = []
+    // bancasDeFruta.push({nome:'banca do jose', tipo:'banca de frutas'})
+    // bancasDeFruta.push({nome:'banca do luiz', tipo:'banca de verduras'})
+    // console.log(bancasDeFruta)
     
 
     // Criar um botao cadastrar => criar um array de objetos literais {ano, em anos, em dias}
@@ -67,15 +69,27 @@
 
     bCalcular.addEventListener('click', function () {            
 
-        linha = '<tr>'
-        linha += '<td>'+anoNasc.value+'</td>'
-        linha += '<td>'+ (2023 - parseInt(anoNasc.value)) +'</td>'
-        linha += '<td>'+(2023 - parseInt(anoNasc.value))*12+'</td>'
-        linha += '<td>'+(2023 - parseInt(anoNasc.value))*12*30+'</td>'
-        linha += '<td>'+(2023 - parseInt(anoNasc.value))*12*30*24+'</td>'
-        linha += '<tr>'
-        console.log(linha)
-        tresultado.insertAdjacentHTML("beforeend",linha)
+        valores = {
+            anoNasc: anoNasc.value,
+            emAnos: (2023 - parseInt(anoNasc.value)),
+            emMeses: (2023 - parseInt(anoNasc.value))*12,
+            emDias: (2023 - parseInt(anoNasc.value))*12*30,
+            emHoras: (2023 - parseInt(anoNasc.value))*12*30*24
+
+        }
+        console.log(valores)
+        bancoDados.push(valores)
+        console.log(bancoDados[0].anoNasc)
+
+        // linha = '<tr>'
+        // linha += '<td>'+anoNasc.value+'</td>'
+        // linha += '<td>'+ (2023 - parseInt(anoNasc.value)) +'</td>'
+        // linha += '<td>'+(2023 - parseInt(anoNasc.value))*12+'</td>'
+        // linha += '<td>'+(2023 - parseInt(anoNasc.value))*12*30+'</td>'
+        // linha += '<td>'+(2023 - parseInt(anoNasc.value))*12*30*24+'</td>'
+        // linha += '<tr>'
+        // console.log(linha)
+        // tresultado.insertAdjacentHTML("beforeend",linha)
 
     })
 
